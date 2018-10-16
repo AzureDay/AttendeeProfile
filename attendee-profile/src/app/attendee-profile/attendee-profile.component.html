@@ -1,0 +1,44 @@
+<mat-card>
+
+  <mat-card-header>
+    <h3>Profile</h3>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>We will keep your email and phone for ourselves only. All communications will be held by email, we will use your phone number only in case of emergency.</p>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.firstName" type="text" placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.lastName" type="text" placeholder="Last name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.phone" type="tel" placeholder="Phone">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.company" type="text" placeholder="Company">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.jobTitle" type="text" placeholder="Job title">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.email" type="email" placeholder="Email">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="attendeeProfile.phone" type="text" placeholder="Photo URL">
+    </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="saveProfile()">Save</button>
+  </mat-card-actions>
+</mat-card>
+
+
